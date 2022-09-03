@@ -1,0 +1,1 @@
+export default function randomColour() {return [Math.random(), Math.random(), Math.random()];}
