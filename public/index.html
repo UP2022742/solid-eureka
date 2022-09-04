@@ -5,23 +5,27 @@
     <title>My App</title>
     <script src="main.js" type="module" defer></script>
     <style>
-        body, html {
-            padding: 0;
-            margin: 0;
+        .container {
             display: flex;
             justify-content: center;
             align-items: center;
-            
         }
-        .canvas {
-            width: 100vh;
-            height: 100vh;
-            
+
+        .container > canvas {
+            position: absolute;
+            top:0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin:auto;
         }
     </style>
 
 </head>
 <body>
-    <canvas class="canvas" id="cube"></canvas>
-    <canvas class="canvas" id="triangle"></canvas>
+    <div class="container">
+        <canvas style="height:400px;width:400px;" class="canvas" id="cube"></canvas>
+        <canvas style="height:400px;width:400px;" class="canvas" id="triangle"></canvas>
+        <canvas class="canvas" id="texture"></canvas>
+    </div>
 </html>
